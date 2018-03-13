@@ -1,0 +1,15 @@
+ #real {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid red;
+    padding: 25px;
+    margin: 25px;
+}
+
+ #drill {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
