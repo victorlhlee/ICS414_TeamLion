@@ -24,6 +24,12 @@
     opacity: 1;
 }
 
+#real:active {
+  background-color: #fcfbb8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
  #drill {
  	float: right;
     background-color: white;
@@ -44,4 +50,10 @@
     background-color: green;
     color: white;
     opacity: 1;
+}
+
+#drill:active {
+  background-color: #fcfbb8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
