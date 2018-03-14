@@ -19,9 +19,13 @@ td {
     border: 15px solid green;
     text-align: center;
     padding: 30px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 td:hover {
     background-color: green;
     color: white;
+    opacity: 1;
 }

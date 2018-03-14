@@ -13,11 +13,15 @@
     font-family: "Courier New";
     font-size: 2.5em;
     font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #real:hover {
     background-color: red;
     color: white;
+    opacity: 1;
 }
 
  #drill {
@@ -31,9 +35,13 @@
     font-family: "Courier New";
     font-size: 2.5em;
     font-weight: bold;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #drill:hover {
     background-color: green;
     color: white;
+    opacity: 1;
 }
