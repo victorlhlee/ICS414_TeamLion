@@ -1,15 +1,29 @@
+/*  div {
+	float: left;
+} */
+
  #real {
-    background-color: lightgrey;
-    width: 300px;
+ 	float: left;
+    background-color: white;
+    width: 400px;
     border: 25px solid red;
-    padding: 25px;
-    margin: 25px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
  #drill {
-    background-color: lightgrey;
-    width: 300px;
+ 	float: right;
+    background-color: white;
+    width: 400px;
     border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 2.5em;
+    font-weight: bold;
 }
