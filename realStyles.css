@@ -1,0 +1,27 @@
+h2 {
+	text-align: center;
+    font-family: "Courier New";
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+#warnTable {
+	font-family: "Courier New";
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+	border: 15px solid red;
+}
+
+td {
+    border: 15px solid red;
+    text-align: center;
+    padding: 30px;
+}
+
+td:hover {
+    background-color: red;
+    color: white;
+}

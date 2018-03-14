@@ -15,6 +15,11 @@
     font-weight: bold;
 }
 
+#real:hover {
+    background-color: red;
+    color: white;
+}
+
  #drill {
  	float: right;
     background-color: white;
@@ -26,4 +31,9 @@
     font-family: "Courier New";
     font-size: 2.5em;
     font-weight: bold;
+}
+
+#drill:hover {
+    background-color: green;
+    color: white;
 }
