@@ -35,3 +35,27 @@ td:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.yes-no-button button {
+    background-color: black;
+    font-family: "Courier New";
+    font-size: 3.0em;
+    font-weight: bold;
+    width: 20%;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.yes-no-button button:hover {
+    background-color: green;
+}
+
+.yes-no-button button { 
+    margin-right:100px;
+}
+
+.yes-no-button button:last-child {
+    margin-right:0px;
+}
