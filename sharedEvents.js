@@ -13,6 +13,13 @@ $(document).ready(function(){
 });
 
 
+//clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
+$(document).ready(function(){
+    $("#correctAlarm").click(function(){
+        location.href = "realDrillSent.html";
+    });
+});
+
 
 //clicking a 'now' choice button will be redirected to start.html
 $(document).ready(function(){
