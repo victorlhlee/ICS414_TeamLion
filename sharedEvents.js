@@ -5,6 +5,15 @@ $(document).ready(function(){
     });
 });
 
+//clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
+$(document).ready(function(){
+    $("#cont").click(function(){
+        location.href = "realAlarmSent.html";
+    });
+});
+
+
+
 //clicking a 'now' choice button will be redirected to start.html
 $(document).ready(function(){
     $("#redirectNow").click(function(){
