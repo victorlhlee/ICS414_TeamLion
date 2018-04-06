@@ -1,0 +1,15 @@
+.navigation-buttons button {
+	background-color: white;
+    font-family: "Courier New";
+    font-size: 1.0em;
+    font-weight: bold;
+    width: 10%;    
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+}
+
+.navigation-buttons button:hover {
+    background-color: black;
+    color: white;
+}
