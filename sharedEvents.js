@@ -5,6 +5,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#proceed").click(function(){
+        location.href = "realAlarmSent.html";
+    });
+});
+
 //clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
 $(document).ready(function(){
     $("#cancel").click(function(){
