@@ -24,6 +24,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#confirmDrill").click(function(){
+        location.href = "drillAlarmSent.html";
+    });
+});
+
+
 //clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
 $(document).ready(function(){
     $("#correctRealAlarm").click(function(){
