@@ -23,7 +23,7 @@ $(document).ready(function(){
 //clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
 $(document).ready(function(){
     $("#correctAlarm").click(function(){
-        location.href = "realDrillSent.html";
+        location.href = "drillAlarmSent.html";
     });
 });
 
