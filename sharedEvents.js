@@ -12,6 +12,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#confirm").click(function(){
+        location.href = "sendToSupervisor.html";
+    });
+});
+
 //clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
 $(document).ready(function(){
     $("#correctRealAlarm").click(function(){
