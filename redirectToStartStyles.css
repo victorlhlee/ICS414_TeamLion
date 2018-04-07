@@ -1,3 +1,17 @@
+#homeButton {
+  background-color: lightblue;
+}
+
+#homeButton:hover {
+    background-color: lightblue;
+}
+
+#homeButton:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
 h1 {
     text-align: center;
     font-family: "Courier New";

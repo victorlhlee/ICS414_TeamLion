@@ -1,13 +1,35 @@
-/*  div {
-	float: left;
-} */
+#homeButton {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#homeButton:hover {
+    background-color: lightblue;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#homeButton:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#title {
+    text-align: center;
+    font-family: "Courier New";
+    font-size: 3.5em;
+    font-weight: bold;
+}
 
  #real {
  	float: left;
     background-color: white;
     width: 400px;
     border: 25px solid red;
-    padding: 30px;
+    padding: 50px;
     margin: 30px;
     text-align: center;
     font-family: "Courier New";
@@ -16,6 +38,7 @@
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 #real:hover {
@@ -35,7 +58,7 @@
     background-color: white;
     width: 400px;
     border: 25px solid green;
-    padding: 30px;
+    padding: 50px;
     margin: 30px;
     text-align: center;
     font-family: "Courier New";
@@ -44,6 +67,7 @@
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 #drill:hover {
