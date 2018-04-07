@@ -1,3 +1,17 @@
+#homeButton {
+  background-color: lightblue;
+}
+
+#homeButton:hover {
+    background-color: lightblue;
+}
+
+#homeButton:active {
+  background-color: lightblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
 h2 {
 	text-align: center;
     font-family: "Courier New";
@@ -5,32 +19,32 @@ h2 {
     font-weight: bold;
 }
 
-#warnTable {
-	font-family: "Courier New";
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 2.5em;
-	font-weight: bold;
-	text-align: center;
-	border: 15px solid red;
-}
-
-td {
+/*  #warnTable {
+  
+} 
+*/
+#warnButton {
     border: 15px solid red;
     text-align: center;
     padding: 30px;
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
+    font-family: "Courier New";
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
-td:hover {
+#warnButton:hover {
     background-color: red;
     color: white;
     opacity: 1;
 }
 
-td:active {
+#warnButton:active {
   background-color: #fcfbb8;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
