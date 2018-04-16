@@ -50,11 +50,22 @@ h2 {
   transform: translateY(4px);
 }
 
+form {  
+    align: center;
+}
+
 #send-via-option {
-    text-align: center;
     font-family: "Courier New";
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: bold; 
+    vertical-align: middle; 
+
+}
+
+.send-via-group input {
+    vertical-align: middle; 
+    width: 20px;
+    height: 20px;
 }
 
 .yes-no-button button {
