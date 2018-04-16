@@ -3,6 +3,22 @@
 <link rel="stylesheet" href="redirectToStartStyles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="sharedEvents.js"></script>
+<script>
+    $.ajax({
+        url: "https://rest.nexmo.com/sms/json",
+        type: "POST",
+        crossDomain: true,
+        data: "from=12016728483&text=414 Test Alarm&to=18083892724&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+        success: function (response) {
+            var resp = JSON.parse(response);
+            alert(resp.status);
+        },
+        error: function (xhr, status) {
+            alert(status);
+        }
+    });
+
+</script>
 
 
 <head>
