@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="realStyles.css">
+<link rel="stylesheet" href="navbarStyles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="realEvent.js"></script>
+<script src="sharedEvents.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<title>REAL 1</title>
+</head>
+<body>
+  <div class="navigation-buttons">
+    <button type="button" id= "homeButton">Home</button>
+    <button type="button" id= "backButton">Back</button>
+  </div>
+
+  <h2>SEND ALARM VIA:</h2>
+
+  <div class="send-via-group">
+    <form>
+      <center>
+        <label id="send-via-option">SIREN</label>
+        <input type="checkbox" name="notification" value="Siren">
+
+        <label id="send-via-option">TEXT</label>
+        <input type="checkbox" name="notification" value="Text">
+        <br>
+
+
+        <label id="send-via-option">RADIO</label>
+        <input type="checkbox" name="notification" value="Radio">
+
+        <label id="send-via-option">EMAIL</label>
+        <input type="checkbox" name="notification" value="Email">
+        <br>
+      </center>
+    </form>
+  </div>
+
+  <br>
+
+  <center>
+    <div class="yes-no-button">
+      <button value="Yes" id="confirm">YES</button>
+      <button value="No" id="cancel">NO</button>
+    </div>
+  </center>
+
+</body>
+</html>

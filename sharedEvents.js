@@ -53,3 +53,9 @@ $(document).ready(function(){
         location.href = "drillAlarmSent.html";
     });
 });
+
+$(document).ready(function(){
+    $("#sendVia").click(function(){
+        location.href = "sendRealVia.html";
+    });
+});

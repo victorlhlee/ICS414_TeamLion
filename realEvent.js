@@ -18,3 +18,9 @@ $(document).ready(function(){
         location.href = "selectedRealAlarm.html";
     });
 });
+
+$(document).ready(function(){
+    $("#sendVia").click(function(){
+        location.href = "sendRealVia.html";
+    });
+});
