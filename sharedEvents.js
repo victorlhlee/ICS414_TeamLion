@@ -11,6 +11,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#sendAlarmVia").click(function(){
+        location.href = "sendRealVia.html";
+    });
+});
+
 //clicking a 'no/cancel' choice button will be redirected to redirectToStart.html
 $(document).ready(function(){
     $("#cancel").click(function(){
@@ -54,8 +60,3 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#sendVia").click(function(){
-        location.href = "sendRealVia.html";
-    });
-});
