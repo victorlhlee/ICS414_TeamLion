@@ -5,6 +5,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#sendVia").click(function(){
+        location.href = "sendDrillVia.html";
+    });
+});
+
 //click back button to get redirected to previous page
 $(document).ready(function(){
     $("#backButton").click(function(){

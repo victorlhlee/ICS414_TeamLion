@@ -46,6 +46,19 @@ h2 {
   transform: translateY(4px);
 }
 
+form {  
+    width: 200px;
+    margin: 0 auto;
+}
+
+#send-via-option {
+    font-family: "Courier New";
+    font-size: 2.5em;
+    font-weight: bold; 
+    vertical-align: middle; 
+
+}
+
 .yes-no-button button {
     background-color: black;
     font-family: "Courier New";
