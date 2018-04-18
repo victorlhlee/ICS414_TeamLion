@@ -18,3 +18,16 @@ $(document).ready(function(){
         location.href = "selectedDrillAlarm.html";
     });
 });
+
+$(document).ready(function(){
+    $("#sendDrillVia").click(function(){
+        location.href = "sendDrillVia.html";
+    });
+});
+
+//click black button to get redirected to previous page
+$(document).ready(function(){
+    $("#confirmDrill").click(function(){
+        location.href = "drillAlarmSent.html";
+    });
+});
