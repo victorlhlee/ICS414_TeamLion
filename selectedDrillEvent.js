@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#sendVia").click(function(){
+    $("#sendDrillVia").click(function(){
         location.href = "sendDrillVia.html";
     });
 });

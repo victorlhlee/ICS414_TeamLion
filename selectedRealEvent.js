@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#sendVia").click(function(){
+    $("#sendRealVia").click(function(){
         location.href = "sendRealVia.html";
     });
 });
