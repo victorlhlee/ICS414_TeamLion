@@ -6,11 +6,11 @@ $(document).ready(function(){
 });
 
 //click black button to get redirected to previous page
-$(document).ready(function(){
-    $("#backButton").click(function(){
-        location.href = "start.html";
-    });
-});
+// $(document).ready(function(){
+//     $("#backButton").click(function(){
+//         location.href = "start.html";
+//     });
+// });
 
 //click alarm choice button to get redirected to selectedRealAlarm.html
 $(document).ready(function(){
