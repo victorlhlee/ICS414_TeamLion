@@ -12,9 +12,9 @@ $(document).ready(function(){
 //     });
 // });
 
-function getDrillAlarm() {
+function getDrillAlarm(warnButton) {
     var x = document.getElementById("warnButton").value;
-    document.getElementById("drillChoice").innerHTML = x;
+    document.getElementById("result").innerHTML = x;
 }
 
 //click alarm choice button to get redirected to selectedRealAlarm.html
