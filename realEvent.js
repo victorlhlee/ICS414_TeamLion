@@ -26,8 +26,20 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $("#reviewRealAlarm").click(function(){
+        location.href = "reviewRealAlarm.html";
+    });
+});
+
+$(document).ready(function(){
     $("#cancel").click(function(){
         location.href = "redirectToStart.html";
+    });
+});
+
+$(document).ready(function(){
+    $("#confirm").click(function(){
+        location.href = "sendToSupervisor.html";
     });
 });
 

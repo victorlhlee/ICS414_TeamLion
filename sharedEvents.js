@@ -19,12 +19,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#confirm").click(function(){
-        location.href = "sendToSupervisor.html";
-    });
-});
-
-$(document).ready(function(){
     $("#confirmDrill").click(function(){
         location.href = "drillAlarmSent.html";
     });
