@@ -21,7 +21,7 @@
     <h2>SEND <span style="color:green">{{ }}</span> DRILL ALARM VIA:</h2>
 
     <div class="send-via-group">
-      <form onsubmit="return results();" method="post" action="/reviewDrillAlarm.html">
+      <form onsubmit="results(); islandResults()" method="post" action="/reviewDrillAlarm.html">
         <input id="via1" type="checkbox" name="notification" value="Siren" />
         <label class="send-via-option">SIREN</label>
         <br>
@@ -120,12 +120,12 @@
   </center>
   <br>
 
-  <center>
+  <!-- <center>
     <div class="yes-no-button">
       <button value="Yes" id="reviewDrillAlarm">YES</button>
       <button value="No" id="cancel">NO</button>
     </div>
-  </center>
+  </center> -->
 
 </body>
 </html>

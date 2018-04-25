@@ -31,30 +31,28 @@ function results() {
     var notificationText = "";
     var i;
 
-    var island = document.forms[0];
-    var islandText = "";
-    var j;
-
     for (i = 0; i < notification.length; i++) {
         if (notification[i].checked) {
             notificationText = notificationText + notification[i].value + " ";
-            
         }
     }
 
-    document.write(notificationText + "<br>");
+    document.write(notificationText);
+}
 
+function islandResults() {
+    var island = document.forms[0];
+    var islandText = "";
+    var j;
+    
     for (j = 0; j < island.length; j++) {
         if (island[j].checked) {
             islandText = islandText + island[j].value + " ";
-            
         }
     }
 
     document.write(islandText);
-
 }
-
 
 $(document).ready(function(){
     $("#reviewDrillAlarm").click(function(){
