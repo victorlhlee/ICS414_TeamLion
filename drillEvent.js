@@ -25,6 +25,19 @@ $(document).ready(function(){
     });
 });
 
+// function islandResults() {
+//     var island = document.forms[0];
+//     var islandText = "";
+//     var j;
+    
+//     for (j = 0; j < island.length; j++) {
+//         if (island[j].checked) {
+//             islandText = islandText + island[j].value + " ";
+//         }
+//     }
+
+//     document.write(islandText);
+// }
 
 function results() {
     var notification = document.forms[0];
@@ -38,20 +51,6 @@ function results() {
     }
 
     document.write(notificationText);
-}
-
-function islandResults() {
-    var island = document.forms[0];
-    var islandText = "";
-    var j;
-    
-    for (j = 0; j < island.length; j++) {
-        if (island[j].checked) {
-            islandText = islandText + island[j].value + " ";
-        }
-    }
-
-    document.write(islandText);
 }
 
 $(document).ready(function(){

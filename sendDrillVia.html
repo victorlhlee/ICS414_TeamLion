@@ -21,20 +21,20 @@
     <h2>SEND <span style="color:green">{{ }}</span> DRILL ALARM VIA:</h2>
 
     <div class="send-via-group">
-      <form onsubmit="results(); islandResults()" method="post" action="/reviewDrillAlarm.html">
-        <input id="via1" type="checkbox" name="notification" value="Siren" />
+      <form method="get" action="/reviewDrillAlarm.html">
+        <input type="checkbox" name="notification" value="Siren" />
         <label class="send-via-option">SIREN</label>
         <br>
 
-        <input id="via2" type="checkbox" name="notification" value="Text" />
+        <input type="checkbox" name="notification" value="Text" />
         <label class="send-via-option">TEXT</label>
         <br>
 
-        <input id="via3" type="checkbox" name="notification" value="Radio" />
+        <input type="checkbox" name="notification" value="Radio" />
         <label class="send-via-option">RADIO</label>
         <br>
 
-        <input id="via4" type="checkbox" name="notification" value="Email" />
+        <input type="checkbox" name="notification" value="Email" />
         <label class="send-via-option">EMAIL</label>
         <br>
 
@@ -73,7 +73,7 @@
         <label id="send-to-option">Kahao'olawe</label>
         <br>
 
-        <input type="submit">
+        <input type="submit" >
 
       </form>
     </div>
