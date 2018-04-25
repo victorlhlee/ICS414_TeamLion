@@ -47,11 +47,11 @@ h2 {
 }
 
 form {  
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 
-#send-via-option {
+.send-via-option {
     font-family: "Courier New";
     font-size: 2.5em;
     font-weight: bold; 
@@ -68,6 +68,18 @@ form {
 }
 
 .yes-no-button button {
+    background-color: black;
+    font-family: "Courier New";
+    font-size: 3.0em;
+    font-weight: bold;
+    width: 20%;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.yes-no-button input {
     background-color: black;
     font-family: "Courier New";
     font-size: 3.0em;

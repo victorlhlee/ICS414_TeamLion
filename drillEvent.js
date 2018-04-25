@@ -12,11 +12,9 @@ $(document).ready(function(){
 //     });
 // });
 
-
-
-//click alarm choice button to get redirected to selectedRealAlarm.html
+//click alarm choice button to get redirected to selectedDrillAlarm.html
 $(document).ready(function(){
-    $("#warnTable").click(function(){       
+    $("#warnTable").click(function(){
         location.href = "selectedDrillAlarm.html";
     });
 });
@@ -26,6 +24,37 @@ $(document).ready(function(){
         location.href = "sendDrillVia.html";
     });
 });
+
+
+function results() {
+    var notification = document.forms[0];
+    var notificationText = "";
+    var i;
+
+    var island = document.forms[0];
+    var islandText = "";
+    var j;
+
+    for (i = 0; i < notification.length; i++) {
+        if (notification[i].checked) {
+            notificationText = notificationText + notification[i].value + " ";
+            
+        }
+    }
+
+    document.write(notificationText + "<br>");
+
+    for (j = 0; j < island.length; j++) {
+        if (island[j].checked) {
+            islandText = islandText + island[j].value + " ";
+            
+        }
+    }
+
+    document.write(islandText);
+
+}
+
 
 $(document).ready(function(){
     $("#reviewDrillAlarm").click(function(){
