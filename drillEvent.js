@@ -27,6 +27,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#reviewDrillAlarm").click(function(){
+        location.href = "reviewDrillAlarm.html";
+    });
+});
+
 //click black button to get redirected to previous page
 $(document).ready(function(){
     $("#confirmDrill").click(function(){
