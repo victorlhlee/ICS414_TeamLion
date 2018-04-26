@@ -84,18 +84,6 @@ form {
     display: inline-block;
 }
 
-/*.yes-no-button input {
-    background-color: black;
-    font-family: "Courier New";
-    font-size: 3.0em;
-    font-weight: bold;
-    width: 20%;
-    border: none;
-    color: white;
-    text-align: center;
-    display: inline-block;
-}*/
-
 .yes-no-button button:hover, .yes-no-button input:hover {
     background-color: green;
 }

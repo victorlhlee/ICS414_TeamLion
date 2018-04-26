@@ -65,12 +65,6 @@ $(document).ready(function(){
     });
 });
 
-// function myFunction() {
-//     var x = document.getElementById("drillForm");
-
-//     location.href = "reviewDrillAlarm.html";
-// }
-
 
 function printCheckedViaChoices() {
     var items = document.getElementsByName('notification');
@@ -94,16 +88,19 @@ function printCheckedViaChoices() {
             selectedislands += islanditems[j].value + " | ";
         }
     }
-
-    // printItems = document.write(selectedItems);
     localStorage.selectedItems = selectedItems;
     localStorage.selectedislands = selectedislands;
-    // printIslands = document.write(selectedislands);
-
 
     location.href = "reviewDrillAlarm.html";
 }
 
+function ifSendViaChoiceCheckedDoThis() {
+    var viachoice = document.getElementsByName('notification');
+
+    if (viachoice.value == "RADIO") {
+        
+    }
+}
 
 $(document).ready(function(){
     $("#reviewDrillAlarm").click(function(){
