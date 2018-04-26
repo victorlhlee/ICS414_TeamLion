@@ -19,11 +19,15 @@ h2 {
     font-weight: bold;
 }
 
+#mySelect {
+    width: 100%;
+}
+
 /*  #warnTable {
   
 } 
 */
-#warnButton {
+#warnButton1, #warnButton2, #warnButton3, #warnButton4, #warnButton5 {
     border: 15px solid red;
     text-align: center;
     padding: 30px;
@@ -50,10 +54,7 @@ h2 {
   transform: translateY(4px);
 }
 
-form {  
-    width: 500px;
-    margin: 0 auto;
-}
+
 
 #send-via-option {
     font-family: "Courier New";

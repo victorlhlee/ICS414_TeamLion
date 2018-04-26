@@ -20,7 +20,12 @@
   <center>
     <h2>A REAL ALARM issue for</h2>
 
-    <h2 style="color:red">{{ }}</h2>
+    <h2 style="color:red"><span id="demo"></span></h2>
+
+    <!-- Needed to grab drill alarm choice data! -->
+    <script>
+      document.getElementById("demo").innerHTML = localStorage.warnButton;
+    </script>
 
     <h2>will be sent via</h2>
     <h2>_____, _____, _____ </h2>

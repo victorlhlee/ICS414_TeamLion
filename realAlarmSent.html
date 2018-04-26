@@ -17,7 +17,13 @@
 	</div>	
 
 <center>
-    <h2>REAL ALARM FOR  SENT</h2>
+    <h2>A REAL ALARM FOR <span id="demo" style="color:red"></span> WAS SENT</h2>
+
+    <!-- Needed to grab drill alarm choice data! -->
+    <script>
+      document.getElementById("demo").innerHTML = localStorage.warnButton;
+    </script> 
+
 
     <h1>Return to home page in 5 seconds...</h1>
     <h1>or</h1>

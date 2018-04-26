@@ -14,72 +14,72 @@
   <div class="navigation-buttons">
     <button type="button" id="homeButton">Home</button>
     <button type="button" onclick="window.history.back()">Back</button>
-  </div>
+</div>
 
-  <center>
+<center> 
+  <!-- <div class="send-via-group"> -->
+    <div>
+        <form method="POST" onsubmit="results()">
+            <h2>SEND <span id="demo" style="color:green"></span> DRILL ALARM VIA:</h2>
 
-    <h2>SEND <span id="demo" style="color:green"></span> DRILL ALARM VIA:</h2>
+            <script>
+                document.getElementById("demo").innerHTML = localStorage.warnButton;
+            </script>
+            
+            <input type="checkbox" name="notification" value="Siren" />
+            <label class="send-via-option">SIREN</label>
+            <br>
 
-    <script>
-      document.getElementById("demo").innerHTML = localStorage.warnButton;
-    </script> 
+            <input type="checkbox" name="notification" value="Text" />
+            <label class="send-via-option">TEXT</label>
+            <br>
 
-    <div class="send-via-group">
-      <form method="get" action="/reviewDrillAlarm.html">
-        <input type="checkbox" name="notification" value="Siren" />
-        <label class="send-via-option">SIREN</label>
-        <br>
+            <input type="checkbox" name="notification" value="Radio" />
+            <label class="send-via-option">RADIO</label>
+            <br>
 
-        <input type="checkbox" name="notification" value="Text" />
-        <label class="send-via-option">TEXT</label>
-        <br>
+            <input type="checkbox" name="notification" value="Email" />
+            <label class="send-via-option">EMAIL</label>
+            <br>
 
-        <input type="checkbox" name="notification" value="Radio" />
-        <label class="send-via-option">RADIO</label>
-        <br>
+            <h2>DRILL ALARM IS FOR:</h2>
 
-        <input type="checkbox" name="notification" value="Email" />
-        <label class="send-via-option">EMAIL</label>
-        <br>
+            <!-- <div class="send-to-group"> -->
+            <input type="checkbox" name="island" value="Hawai'i island" />
+            <label id="send-to-option">Hawai'i island</label>
+            <br>
 
-      <h2>DRILL ALARM IS FOR:</h2>
+            <input type="checkbox" name="island" value="Maui" />
+            <label id="send-to-option">Maui</label>
+            <br>
 
-      <div class="send-to-group">
-        <input type="checkbox" name="island" value="Hawaii" />
-        <label id="send-to-option">Hawai'i island</label>
-        <br>
+            <input type="checkbox" name="island" value="O'ahu" />
+            <label id="send-to-option">O'ahu</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Maui" />
-        <label id="send-to-option">Maui</label>
-        <br>
+            <input type="checkbox" name="island" value="Kaua'i" />
+            <label id="send-to-option">Kaua'i</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Oahu" />
-        <label id="send-to-option">O'ahu</label>
-        <br>
+            <input type="checkbox" name="island" value="Moloka'i" />
+            <label id="send-to-option">Moloka'i</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Kauai" />
-        <label id="send-to-option">Kaua'i</label>
-        <br>
+            <input type="checkbox" name="island" value="Lana'i" />
+            <label id="send-to-option">Lana'i</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Molokai" />
-        <label id="send-to-option">Moloka'i</label>
-        <br>
+            <input type="checkbox" name="island" value="Ni'ihau" />
+            <label id="send-to-option">Ni'ihau</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Lanai" />
-        <label id="send-to-option">Lana'i</label>
-        <br>
+            <input type="checkbox" name="island" value="Kahao'olawe" />
+            <label id="send-to-option">Kahao'olawe</label>
+            <br>
 
-        <input type="checkbox" name="island" value="Niihau" />
-        <label id="send-to-option">Ni'ihau</label>
-        <br>
+            <input type="submit">
 
-        <input type="checkbox" name="island" value="Kahaoolawe" />
-        <label id="send-to-option">Kahao'olawe</label>
-        <br>
-
-        <input type="submit" >
-
-      </form>
+        </form>
     </div>
 
 <!-- 
@@ -118,18 +118,18 @@
         <input type="checkbox" name="island" value="Kahaoolawe" />
         <label id="send-to-option">Kahao'olawe</label>
         <br>
-      </form> -->
+    </form> -->
 
-    </div>
-  </center>
-  <br>
+</div>
+</center>
+<br>
 
   <!-- <center>
     <div class="yes-no-button">
       <button value="Yes" id="reviewDrillAlarm">YES</button>
       <button value="No" id="cancel">NO</button>
     </div>
-  </center> -->
+</center> -->
 
 </body>
 </html>

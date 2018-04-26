@@ -18,7 +18,11 @@
 
   <center>
 
-    <h2>SEND <span style="color:red">{{ }}</span> REAL ALARM VIA:</h2>
+    <h2>SEND <span id="demo" style="color:red"></span> REAL ALARM VIA:</h2>
+
+            <script>
+                document.getElementById("demo").innerHTML = localStorage.warnButton;
+            </script>
 
     <div class="send-via-group">
       <form>

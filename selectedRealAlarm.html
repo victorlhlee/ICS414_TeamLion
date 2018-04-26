@@ -20,7 +20,11 @@
   <center>
     <h2>A REAL ALARM issue for </h2>
 
-    <h2 style="color:red">{{ }}</h2>
+    <h2 style="color:red"><span id="demo"></span></h2>
+
+    <script>
+      document.getElementById("demo").innerHTML = localStorage.warnButton;
+    </script>
 
     <h2>was selected, is this accurate?</h2>
 

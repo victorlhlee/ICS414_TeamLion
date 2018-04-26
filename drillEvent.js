@@ -47,32 +47,18 @@ function myFunction5() {
     location.href = "selectedDrillAlarm.html";
 }
 
-//click alarm choice button to get redirected to selectedDrillAlarm.html
-$(document).ready(function(){
-    $("#warnTable").click(function(){
-        location.href = "selectedDrillAlarm.html";
-    });
-});
+// //click alarm choice button to get redirected to selectedDrillAlarm.html
+// $(document).ready(function(){
+//     $("#warnTable").click(function(){
+//         location.href = "selectedDrillAlarm.html";
+//     });
+// });
 
 $(document).ready(function(){
     $("#sendDrillVia").click(function(){
         location.href = "sendDrillVia.html";
     });
 });
-
-// function islandResults() {
-//     var island = document.forms[0];
-//     var islandText = "";
-//     var j;
-    
-//     for (j = 0; j < island.length; j++) {
-//         if (island[j].checked) {
-//             islandText = islandText + island[j].value + " ";
-//         }
-//     }
-
-//     document.write(islandText);
-// }
 
 function results() {
     var notification = document.forms[0];
@@ -85,7 +71,21 @@ function results() {
         }
     }
 
-    document.write(notificationText);
+     document.write(notificationText);
+}
+
+function islandResults() {
+    var island = document.forms[0];
+    var islandText = "";
+    var j;
+    
+    for (j = 0; j < island.length; j++) {
+        if (island[j].checked) {
+            islandText = islandText + island[j].value + " ";
+        }
+    }
+
+    document.write(islandText);
 }
 
 $(document).ready(function(){

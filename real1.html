@@ -18,14 +18,28 @@
 
   <h2>REAL ALARM SELECTION</h2>
 
-  <div class="btn-group" id="warnTable">
+  <div>
+    <center>
+      <form method="POST">
+        <select name="alarm" id="mySelect" size="5">    
+          <option onclick="myFunction1()" id="warnButton1" value="AMBER ALERT">AMBER ALERT</option>
+          <option onclick="myFunction2()" id="warnButton2" value="LANDSLIDE">LANDSLIDE</option>
+          <option onclick="myFunction3()" id="warnButton3" value="TSUNAMI">TSUNAMI</option>
+          <option onclick="myFunction4()" id="warnButton4" value="PACOM CDW">PACOM CDW</option>
+          <option onclick="myFunction5()" id="warnButton5" value="HIGH SURF">HIGH SURF</option>
+        </select>
+      </form>
+    </center>
+  </div>
+
+<!--   <div class="btn-group" id="warnTable">
     <button class="button" id="warnButton" value="amber-alert">AMBER ALERT</button>
     <button class="button" id="warnButton" value="landslide">LANDSLIDE</button>
     <button class="button" id="warnButton" value="tsunami">TSUNAMI</button>
     <button class="button" id="warnButton" value="pacom-cdw">PACOM CDW</button>
     <button class="button" id="warnButton" value="high-rfug">HIGH SURF</button>
     <button class="button" id="warnButton" value="new-msg">NEW MESSAGE</button>
-  </div>
+  </div> -->
 
 <!-- <table id= "warnTable">
   <tr>
