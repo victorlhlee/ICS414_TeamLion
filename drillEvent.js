@@ -60,6 +60,14 @@ $(document).ready(function(){
     });
 });
 
+
+function myFunction() {
+    document.getElementById("drillForm").submit();
+
+    location.href = "reviewDrillAlarm.html";
+}
+
+
 function results() {
     var notification = document.forms[0];
     var notificationText = "";
@@ -71,7 +79,7 @@ function results() {
         }
     }
 
-     document.write(notificationText);
+    document.write(notificationText);
 }
 
 function islandResults() {

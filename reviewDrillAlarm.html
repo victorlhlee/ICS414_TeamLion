@@ -30,6 +30,22 @@
     <h2>will be sent via</h2>
     <span id="notificationText"></span>
 
+
+    <script>
+      function results() {
+        var notification = document.forms[0];
+        var notificationText = "";
+        var i;
+
+        for (i = 0; i < notification.length; i++) {
+          if (notification[i].checked) {
+            notificationText = notificationText + notification[i].value + " ";
+          }
+        }
+        document.write(notificationText);
+      } 
+  </script>
+
     <h2>to</h2>
     <span id="islandText"></span>
     <br />
