@@ -12,13 +12,15 @@ $(document).ready(function(){
 //     });
 // });
 
-function myFunction1() {
+// for AMBER ALERT
+function myFunction1() {   
     var warnButton = document.getElementById("warnButton1").value;
     localStorage.warnButton = warnButton;
 
     location.href = "selectedDrillAlarm.html";
 }
 
+// for LANDSLIDE
 function myFunction2() {
     var warnButton = document.getElementById("warnButton2").value;
     localStorage.warnButton = warnButton;
@@ -26,6 +28,7 @@ function myFunction2() {
     location.href = "selectedDrillAlarm.html";
 }
 
+// for TSUNAMI
 function myFunction3() {
     var warnButton = document.getElementById("warnButton3").value;
     localStorage.warnButton = warnButton;
@@ -33,6 +36,7 @@ function myFunction3() {
     location.href = "selectedDrillAlarm.html";
 }
 
+// for PACOM CDW
 function myFunction4() {
     var warnButton = document.getElementById("warnButton4").value;
     localStorage.warnButton = warnButton;
@@ -40,6 +44,7 @@ function myFunction4() {
     location.href = "selectedDrillAlarm.html";
 }
 
+// for HIGH SURF
 function myFunction5() {
     var warnButton = document.getElementById("warnButton5").value;
     localStorage.warnButton = warnButton;
@@ -60,40 +65,45 @@ $(document).ready(function(){
     });
 });
 
-function myFunction() {
-    document.getElementById("drillForm").submit();
+// function myFunction() {
+//     var x = document.getElementById("drillForm");
+
+//     location.href = "reviewDrillAlarm.html";
+// }
+
+
+function printCheckedViaChoices() {
+    var items = document.getElementsByName('notification');
+    var selectedItems = "| ";
+    var printItems; 
+    var i;
+
+    for (i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox' && items[i].checked == true) {
+            selectedItems += items[i].value + " | ";
+        }
+    }
+
+    var islanditems = document.getElementsByName('island');
+    var selectedislands = "| ";
+    var printIslands; 
+    var j;
+
+    for (j = 0; j < islanditems.length; j++) {
+        if (islanditems[j].type == 'checkbox' && islanditems[j].checked == true) {
+            selectedislands += islanditems[j].value + " | ";
+        }
+    }
+
+    // printItems = document.write(selectedItems);
+    localStorage.selectedItems = selectedItems;
+    localStorage.selectedislands = selectedislands;
+    // printIslands = document.write(selectedislands);
+
 
     location.href = "reviewDrillAlarm.html";
 }
 
-
-function results() {
-    var notification = document.forms[0];
-    var notificationText = "";
-    var i;
-
-    for (i = 0; i < notification.length; i++) {
-        if (notification[i].checked) {
-            notificationText = notificationText + notification[i].value + " ";
-        }
-    }
-
-    document.write(notificationText);
-}
-
-function islandResults() {
-    var island = document.forms[0];
-    var islandText = "";
-    var j;
-    
-    for (j = 0; j < island.length; j++) {
-        if (island[j].checked) {
-            islandText = islandText + island[j].value + " ";
-        }
-    }
-
-    document.write(islandText);
-}
 
 $(document).ready(function(){
     $("#reviewDrillAlarm").click(function(){

@@ -19,7 +19,7 @@
 <center> 
   <!-- <div class="send-via-group"> -->
     <div>
-        <form id="drillForm" onsubmit="myFunction()" method="POST">
+        <form id="drillForm" onsubmit="" method="POST">
             <h2>SEND <span id="drilltype1" style="color:green"></span> DRILL ALARM VIA:</h2>
 
             <input type="checkbox" name="notification" value="Siren" />
@@ -41,47 +41,54 @@
             <h2><span id="drilltype2" style="color:green"></span> DRILL ALARM IS FOR:</h2>
 
             <!-- <div class="send-to-group"> -->
-            <input type="checkbox" name="island" value="Hawai'i island" />
-            <label id="send-to-option">Hawai'i island</label>
-            <br>
+                <input type="checkbox" name="island" value="Hawai'i island" />
+                <label id="send-to-option">Hawai'i island</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Maui" />
-            <label id="send-to-option">Maui</label>
-            <br>
+                <input type="checkbox" name="island" value="Maui" />
+                <label id="send-to-option">Maui</label>
+                <br>
 
-            <input type="checkbox" name="island" value="O'ahu" />
-            <label id="send-to-option">O'ahu</label>
-            <br>
+                <input type="checkbox" name="island" value="O'ahu" />
+                <label id="send-to-option">O'ahu</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Kaua'i" />
-            <label id="send-to-option">Kaua'i</label>
-            <br>
+                <input type="checkbox" name="island" value="Kaua'i" />
+                <label id="send-to-option">Kaua'i</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Moloka'i" />
-            <label id="send-to-option">Moloka'i</label>
-            <br>
+                <input type="checkbox" name="island" value="Moloka'i" />
+                <label id="send-to-option">Moloka'i</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Lana'i" />
-            <label id="send-to-option">Lana'i</label>
-            <br>
+                <input type="checkbox" name="island" value="Lana'i" />
+                <label id="send-to-option">Lana'i</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Ni'ihau" />
-            <label id="send-to-option">Ni'ihau</label>
-            <br>
+                <input type="checkbox" name="island" value="Ni'ihau" />
+                <label id="send-to-option">Ni'ihau</label>
+                <br>
 
-            <input type="checkbox" name="island" value="Kahao'olawe" />
-            <label id="send-to-option">Kahao'olawe</label>
-            <br>
+                <input type="checkbox" name="island" value="Kahao'olawe" />
+                <label id="send-to-option">Kahao'olawe</label>
+                <br>
+                <br>
 
-            <input type="submit" id="reviewDrillAlarm">
-        </form>
+                <div class="yes-no-button">
+                    <center>
+                        <input value="SUBMIT" type="button" id="reviewDrillAlarm" onclick="printCheckedViaChoices()" />
+                        <input value="CANCEL" type="button" id="cancel" />
+                    </center>
+                </div>
+            </form>
 
-        <script>
-            document.getElementById("drilltype1").innerHTML = localStorage.warnButton;
-            document.getElementById("drilltype2").innerHTML = localStorage.warnButton;
-        </script>
+            <!--  Used to display drill alarm choice text -->
+            <script>
+                document.getElementById("drilltype1").innerHTML = localStorage.warnButton;
+                document.getElementById("drilltype2").innerHTML = localStorage.warnButton;
+            </script>
 
-    </div>
+        </div>
 
 <!-- 
     <h2>DRILL ALARM IS FOR:</h2>
@@ -120,10 +127,7 @@
         <label id="send-to-option">Kahao'olawe</label>
         <br>
     </form> -->
-
-</div>
 </center>
-<br>
 
   <!-- <center>
     <div class="yes-no-button">

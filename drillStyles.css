@@ -72,7 +72,7 @@ form {
 
 }
 
-.yes-no-button button {
+.yes-no-button button, .yes-no-button input {
     background-color: black;
     font-family: "Courier New";
     font-size: 3.0em;
@@ -84,7 +84,7 @@ form {
     display: inline-block;
 }
 
-.yes-no-button input {
+/*.yes-no-button input {
     background-color: black;
     font-family: "Courier New";
     font-size: 3.0em;
@@ -94,16 +94,16 @@ form {
     color: white;
     text-align: center;
     display: inline-block;
-}
+}*/
 
-.yes-no-button button:hover {
+.yes-no-button button:hover, .yes-no-button input:hover {
     background-color: green;
 }
 
-.yes-no-button button { 
+.yes-no-button button, .yes-no-button input { 
     margin-right:100px;
 }
 
-.yes-no-button button:last-child {
+.yes-no-button button:last-child, .yes-no-button input:last-child {
     margin-right:0px;
 }
