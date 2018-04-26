@@ -12,6 +12,7 @@ $(document).ready(function(){
 //     });
 // });
 
+// for AMBER ALERT
 function myFunction1() {
     var warnButton = document.getElementById("warnButton1").value;
     localStorage.warnButton = warnButton;
@@ -19,6 +20,7 @@ function myFunction1() {
     location.href = "selectedRealAlarm.html";
 }
 
+// for LANDSLIDE
 function myFunction2() {
     var warnButton = document.getElementById("warnButton2").value;
     localStorage.warnButton = warnButton;
@@ -26,6 +28,7 @@ function myFunction2() {
     location.href = "selectedRealAlarm.html";
 }
 
+// for TSUNAMI
 function myFunction3() {
     var warnButton = document.getElementById("warnButton3").value;
     localStorage.warnButton = warnButton;
@@ -33,6 +36,7 @@ function myFunction3() {
     location.href = "selectedRealAlarm.html";
 }
 
+// for PACOM CDW
 function myFunction4() {
     var warnButton = document.getElementById("warnButton4").value;
     localStorage.warnButton = warnButton;
@@ -40,6 +44,7 @@ function myFunction4() {
     location.href = "selectedRealAlarm.html";
 }
 
+// for HIGH SURF
 function myFunction5() {
     var warnButton = document.getElementById("warnButton5").value;
     localStorage.warnButton = warnButton;
@@ -47,18 +52,47 @@ function myFunction5() {
     location.href = "selectedRealAlarm.html";
 }
 
-//click alarm choice button to get redirected to selectedRealAlarm.html
-$(document).ready(function(){
-    $("#warnTable").click(function(){
-        location.href = "selectedRealAlarm.html";
-    });
-});
+// $(document).ready(function(){
+//     $("#warnTable").click(function(){
+//         location.href = "selectedRealAlarm.html";
+//     });
+// });
 
 $(document).ready(function(){
     $("#sendRealVia").click(function(){
         location.href = "sendRealVia.html";
     });
 });
+
+
+function printCheckedViaChoices() {
+    var items = document.getElementsByName('notification');
+    var selectedItems = "| ";
+    var printItems; 
+    var i;
+
+    for (i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox' && items[i].checked == true) {
+            selectedItems += items[i].value + " | ";
+        }
+    }
+
+    var islanditems = document.getElementsByName('island');
+    var selectedislands = "| ";
+    var printIslands; 
+    var j;
+
+    for (j = 0; j < islanditems.length; j++) {
+        if (islanditems[j].type == 'checkbox' && islanditems[j].checked == true) {
+            selectedislands += islanditems[j].value + " | ";
+        }
+    }
+    localStorage.selectedItems = selectedItems;
+    localStorage.selectedislands = selectedislands;
+
+    location.href = "reviewRealAlarm.html";
+}
+
 
 $(document).ready(function(){
     $("#reviewRealAlarm").click(function(){

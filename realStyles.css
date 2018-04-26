@@ -54,9 +54,7 @@ h2 {
   transform: translateY(4px);
 }
 
-
-
-#send-via-option {
+.send-via-option {
     font-family: "Courier New";
     font-size: 2.5em;
     font-weight: bold; 
@@ -78,7 +76,7 @@ h2 {
     height: 20px;
 }
 
-.yes-no-button button {
+.yes-no-button button, .yes-no-button input {
     background-color: black;
     font-family: "Courier New";
     font-size: 3.0em;
@@ -90,14 +88,14 @@ h2 {
     display: inline-block;
 }
 
-.yes-no-button button:hover {
+.yes-no-button button:hover, .yes-no-button input:hover {
     background-color: red;
 }
 
-.yes-no-button button { 
+.yes-no-button button, .yes-no-button input { 
     margin-right:100px;
 }
 
-.yes-no-button button:last-child {
+.yes-no-button button:last-child, .yes-no-button input:last-child {
     margin-right:0px;
 }

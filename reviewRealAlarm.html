@@ -22,16 +22,12 @@
 
     <h2 style="color:red"><span id="demo"></span></h2>
 
-    <!-- Needed to grab drill alarm choice data! -->
-    <script>
-      document.getElementById("demo").innerHTML = localStorage.warnButton;
-    </script>
-
     <h2>will be sent via</h2>
-    <h2>_____, _____, _____ </h2>
+    <h2 style="color:red"><span id="myVia"></span></h2>
 
     <h2>to</h2>
-    <h2>_____, _____, _____ </h2>
+    <h2 style="color:red"><span id="myIslands"></span></h2>
+    <br />
 
     <div class="yes-no-button">
       <button type="button" id="confirm">YES</button>
@@ -39,6 +35,14 @@
     </div>
 
   </center>
+
+    <!-- Needed to grab drill alarm choice data! -->
+    <script>
+      document.getElementById("demo").innerHTML = localStorage.warnButton;
+      document.getElementById("myVia").innerHTML = localStorage.selectedItems;
+      document.getElementById("myIslands").innerHTML = localStorage.selectedislands;
+    </script>
+
 
   </body>
 </html>

@@ -94,23 +94,19 @@ function printCheckedViaChoices() {
     location.href = "reviewDrillAlarm.html";
 }
 
-function ifSendViaChoiceCheckedDoThis() {
-    var viachoice = document.getElementsByName('notification');
+// $(document).ready(function(){
+//     $("#reviewDrillAlarm").click(function(){
+//         location.href = "reviewDrillAlarm.html";
+//     });
+// });
 
-    if (viachoice.value == "RADIO") {
-        
-    }
-}
-
-$(document).ready(function(){
-    $("#reviewDrillAlarm").click(function(){
-        location.href = "reviewDrillAlarm.html";
-    });
-});
-
-//click black button to get redirected to previous page
 $(document).ready(function(){
     $("#confirmDrill").click(function(){
+        playRadio();
         location.href = "drillAlarmSent.html";
     });
 });
+
+function playRadio(){
+  
+}
