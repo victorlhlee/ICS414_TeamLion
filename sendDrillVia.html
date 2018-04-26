@@ -20,12 +20,8 @@
   <!-- <div class="send-via-group"> -->
     <div>
         <form id="drillForm" onsubmit="myFunction()" method="POST">
-            <h2>SEND <span id="demo" style="color:green"></span> DRILL ALARM VIA:</h2>
+            <h2>SEND <span id="drilltype1" style="color:green"></span> DRILL ALARM VIA:</h2>
 
-            <script>
-                document.getElementById("demo").innerHTML = localStorage.warnButton;
-            </script>
-            
             <input type="checkbox" name="notification" value="Siren" />
             <label class="send-via-option">SIREN</label>
             <br>
@@ -42,7 +38,7 @@
             <label class="send-via-option">EMAIL</label>
             <br>
 
-            <h2>DRILL ALARM IS FOR:</h2>
+            <h2><span id="drilltype2" style="color:green"></span> DRILL ALARM IS FOR:</h2>
 
             <!-- <div class="send-to-group"> -->
             <input type="checkbox" name="island" value="Hawai'i island" />
@@ -78,8 +74,13 @@
             <br>
 
             <input type="submit" id="reviewDrillAlarm">
-
         </form>
+
+        <script>
+            document.getElementById("drilltype1").innerHTML = localStorage.warnButton;
+            document.getElementById("drilltype2").innerHTML = localStorage.warnButton;
+        </script>
+
     </div>
 
 <!-- 

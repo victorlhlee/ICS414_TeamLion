@@ -60,7 +60,6 @@ $(document).ready(function(){
     });
 });
 
-
 function myFunction() {
     document.getElementById("drillForm").submit();
 
