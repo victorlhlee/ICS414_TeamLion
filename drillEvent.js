@@ -12,6 +12,41 @@ $(document).ready(function(){
 //     });
 // });
 
+function myFunction1() {
+    var warnButton = document.getElementById("warnButton1").value;
+    localStorage.warnButton = warnButton;
+
+    location.href = "selectedDrillAlarm.html";
+}
+
+function myFunction2() {
+    var warnButton = document.getElementById("warnButton2").value;
+    localStorage.warnButton = warnButton;
+
+    location.href = "selectedDrillAlarm.html";
+}
+
+function myFunction3() {
+    var warnButton = document.getElementById("warnButton3").value;
+    localStorage.warnButton = warnButton;
+
+    location.href = "selectedDrillAlarm.html";
+}
+
+function myFunction4() {
+    var warnButton = document.getElementById("warnButton4").value;
+    localStorage.warnButton = warnButton;
+
+    location.href = "selectedDrillAlarm.html";
+}
+
+function myFunction5() {
+    var warnButton = document.getElementById("warnButton5").value;
+    localStorage.warnButton = warnButton;
+
+    location.href = "selectedDrillAlarm.html";
+}
+
 //click alarm choice button to get redirected to selectedDrillAlarm.html
 $(document).ready(function(){
     $("#warnTable").click(function(){

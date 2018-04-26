@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="drillStyles.css">
 <link rel="stylesheet" href="navbarStyles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="selectedDrillEvent.js"></script>-->
 <script src="drillEvent.js"></script>
 <script src="sharedEvents.js"></script>
 
@@ -21,8 +20,11 @@
   <center>
     <h2>A DRILL ALARM issue for </h2>
 
-    <!-- <h2 style="color:green">{{ }}</h2> -->
-    <div id="mySelect"></div>
+    <h2 style="color:green"><span id="demo"></span></h2>
+
+    <script>
+      document.getElementById("demo").innerHTML = localStorage.warnButton;
+    </script>
 
     <h2>was selected, is this accurate?</h2>
 

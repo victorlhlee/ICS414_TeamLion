@@ -19,7 +19,11 @@ h2 {
     font-weight: bold;
 }
 
-#warnButton {
+#mySelect {
+    width: 100%;
+}
+
+#warnButton1, #warnButton2, #warnButton3, #warnButton4, #warnButton5 {
     border: 15px solid green;
     text-align: center;
     padding: 30px;
@@ -34,22 +38,23 @@ h2 {
     text-align: center;
 }
 
-#warnButton:hover {
+/*#warnButton1, #warnButton2, #warnButton3, #warnButton4, #warnButton5:hover {
     background-color: green;
     color: white;
     opacity: 1;
-}
+}*/
 
-#warnButton:active {
+/*#warnButton1, #warnButton2, #warnButton3, #warnButton4, #warnButton5:active {
   background-color: #fcfbb8;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+}*/
 
+/*
 form {  
     width: 600px;
     margin: 0 auto;
-}
+}*/
 
 .send-via-option {
     font-family: "Courier New";
