@@ -11,6 +11,13 @@
     <title>WARNING ISSUED</title>
 </head>
 
+
+<script type = "text/javascript">
+</script>
+
+
+
+
 <body>
 	<div class="navigation-buttons">
 		<button type="button" id= "homeButton">Home</button>
@@ -22,7 +29,9 @@
     <!-- Needed to grab drill alarm choice data! -->
     <script>
       document.getElementById("demo").innerHTML = localStorage.warnButton;
-    </script> 
+    </script>
+
+
 
 
     <h1>Return to home page in 5 seconds...</h1>
@@ -31,6 +40,11 @@
     <div class="redirect-button">
         <button value="Now" id="redirectNow">NOW</button>
     </div>
+    <form method="POST" action="https://formspree.io/alicewy@hawaii.edu">
+        <input type="email" name="email" placeholder="alicewy@hawaii.edu">
+        <textarea name="message" placeholder="414 Alarm"></textarea>
+        <button type="submit">Send</button>
+    </form>
 
 </center>
 

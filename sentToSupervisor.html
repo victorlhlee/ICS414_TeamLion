@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="redirectToStartStyles.css">
-<link rel="stylesheet" href="navbarStyles.css">
-<link rel="stylesheet" href="realStyles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="sharedEvents.js"></script>
+
+<!--<script>
+    $.ajax({
+        url: "https://rest.nexmo.com/sms/json",
+        type: "POST",
+        crossDomain: true,
+        data: "from=12016728483&text=YOUR STAFF HAS SENT YOU A REQUEST TO SEND OUT A MASS REAL ALARM MESSAGE, REPLY TO DENY THEIR ACCESS&to=18083892724&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+        success: function (response) {
+            var resp = JSON.parse(response);
+            alert(resp.status);
+        },
+        error: function (xhr, status) {
+            alert("SUPERVISOR HAS BEEN NOTIFIED, PLEASE WAIT FOR APPROVAL, OR PRESS OK TO CONTINUE");
+        }
+    });
+</script>-->
 
 
 <head>
@@ -13,16 +27,10 @@
 </head>
 
 <body>
-<div class="navigation-buttons">
-    <button type="button" id= "homeButton">Home</button>
-    <button type="button" onclick="window.history.back()">Back</button>
-</div>
+<button type="button" id= "homeButton">Home</button>
 
 <center>
-    <h2>
-    	SUPERVISOR HAS BEEN NOTIFIED, 
-    	<br>PROCEED OR RESCIND?
-    </h2>
+    <h2>SUPERVISOR HAS BEEN NOTIFIED, PROCEED OR RESCIND?</h2>
 
     <div class="yes-no-button">
         <button value="Yes" id="proceed">CONTINUE</button>
