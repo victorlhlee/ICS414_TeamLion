@@ -8,13 +8,13 @@
         url: "https://rest.nexmo.com/sms/json",
         type: "POST",
         crossDomain: true,
-        data: "from=12016728483&text=414 Test Alarm&to=18083892724&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+        data: "from=12016728483&text=YOUR STAFF HAS SENT YOU A REQUEST TO SEND OUT A MASS REAL ALARM MESSAGE, REPLY TO DENY THEIR ACCESS&to=18083892724&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
         success: function (response) {
             var resp = JSON.parse(response);
             alert(resp.status);
         },
         error: function (xhr, status) {
-            alert(status);
+            alert("SUPERVISOR HAS BEEN NOTIFIED, PLEASE WAIT FOR APPROVAL, OR PRESS OK TO CONTINUE");
         }
     });
 
