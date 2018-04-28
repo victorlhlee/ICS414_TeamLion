@@ -79,9 +79,9 @@ function printCheckedViaChoices() {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
 
-            if (items[i].value == 'SIREN') {
+            if (items[i].value == 'SIREN' && items[i].checked == true) {
                 playSiren = true;
-            } else if (items[i].value == 'RADIO') {
+            } else if (items[i].value == 'RADIO' && items[i].checked == true) {
                 playRadio = true;
             }
         }
@@ -114,21 +114,24 @@ $(document).ready(function(){
     $("#confirmDrill").click(function(){
         location.href = "drillAlarmSent.html";
 
-        sirensound();
-        radiomsg();
+        if (playSiren = true) {
+            window.open("sirenPlayer.html");
+        } else if (playRadio = true) {
+            window.open("drillRadioPlayer.html");
+        }
     });
 });
 
-// Plays siren if siren option is checked.
-function sirensound(){
-    if (playSiren = true) {
-        window.open("sirenPlayer.html");
-    }
-}
+// // Plays siren if siren option is checked.
+// function sirensound(){
+//     if (playSiren = true) {
+//         window.open("sirenPlayer.html");
+//     }
+// }
 
-// Plays radio message if radio option is checked.
-function radiomsg(){
-    if (playRadio = true) {
-        window.open("drillRadioPlayer.html");
-    }
-}
+// // Plays radio message if radio option is checked.
+// function radiomsg(){
+//     if (playRadio = true) {
+//         window.open("drillRadioPlayer.html");
+//     }
+// }
