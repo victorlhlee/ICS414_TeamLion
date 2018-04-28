@@ -25,6 +25,22 @@
 
     <!-- Needed to grab drill alarm choice data! -->
     <script>
+        $.ajax({
+            url: "https://rest.nexmo.com/sms/json",
+            type: "POST",
+            crossDomain: true,
+            data: "from=12016728483&text=A DRILL HAS BEEN ISSUED, KEEP CALM AND FOLLOW ALONG&to=18087415151&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+            success: function (response) {
+                var resp = JSON.parse(response);
+                alert(resp.status);
+            },
+            error: function (xhr, status) {
+                alert("SUPERVISOR HAS BEEN NOTIFIED, PLEASE WAIT FOR APPROVAL, OR PRESS OK TO CONTINUE");
+            }
+        });
+    </script>
+
+    <script>
       document.getElementById("demo").innerHTML = localStorage.warnButton;
     </script> 
 
