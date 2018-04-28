@@ -9,7 +9,11 @@
         url: "https://rest.nexmo.com/sms/json",
         type: "POST",
         crossDomain: true,
+<<<<<<< HEAD
         data: "from=12016728483&text=YOUR STAFF HAS SENT YOU A REQUEST TO SEND OUT A MASS REAL ALARM MESSAGE, REPLY TO DENY THEIR ACCESS&to=18087415151&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+=======
+        data: "from=12016728483&text=EVACUATE IMMEDIATELY: THIS IS NOT A DRILL&to=18083892724&api_key=b91f33b9&api_secret=VgUVHXmxQABCOn3o",
+>>>>>>> master
         success: function (response) {
             var resp = JSON.parse(response);
             alert(resp.status);
@@ -32,6 +36,11 @@
     <h2>SUPERVISOR HAS BEEN NOTIFIED, PROCEED OR RESCIND?</h2>
 
     <div class="yes-no-button">
+        <form method="POST" action="https://formspree.io/alicewy@hawaii.edu">
+            <input type="email" name="email" placeholder="alicewy@hawaii.edu">
+            <textarea name="message" placeholder="REAL ALARM via Email"></textarea>
+            <button value="submit">SUBMIT</button>
+        </form>
         <button value="Yes" id="proceed">CONTINUE</button>
         <button value="No" id="cancel">CANCEL</button>
     </div>
