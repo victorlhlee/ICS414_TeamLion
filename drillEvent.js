@@ -76,8 +76,10 @@ function printCheckedViaChoices() {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
 
-            if (items[i].checked == true && items[i].value == 'SIREN') {
+            if (items[i].value == 'SIREN') {
                 playSiren();
+            } else if (items[i].value == 'RADIO') {
+                playRadio();
             }
         }
     }
@@ -92,6 +94,7 @@ function printCheckedViaChoices() {
             selectedislands += islanditems[j].value + " | ";
         }
     }
+
     localStorage.selectedItems = selectedItems;
     localStorage.selectedislands = selectedislands;
 
@@ -106,11 +109,14 @@ function printCheckedViaChoices() {
 
 $(document).ready(function(){
     $("#confirmDrill").click(function(){
-        playRadio();
         location.href = "drillAlarmSent.html";
     });
 });
 
 function playSiren(){
-    location.href = "sirenPlayer.html";
+    window.open("sirenPlayer.html");
+}
+
+function playSiren(){
+    window.open("drillRadioPlayer.html");
 }
