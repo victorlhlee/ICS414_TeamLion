@@ -98,6 +98,8 @@ function printCheckedViaChoices() {
             selectedislands += islanditems[j].value + " | ";
         }
     }
+    localStorage.playSiren = playSiren;
+    localStorage.playRadio = playRadio;
     localStorage.selectedItems = selectedItems;
     localStorage.selectedislands = selectedislands;
 
@@ -119,24 +121,24 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#confirm").click(function(){
-        location.href = "sendToSupervisor.html";
-
         sirensound();
         radiomsg();
+
+        location.href = "sendToSupervisor.html";
     });
 });
 
 
 // Plays siren if siren option is checked.
 function sirensound(){
-    if (playSiren = true) {
+    if (localStorage.playSiren == "true") {
         window.open("sirenPlayer.html");
     }
 }
 
 // Plays radio message if radio option is checked.
 function radiomsg(){
-    if (playRadio = true) {
+    if (localStorage.playRadio == "true") {
         window.open("realRadioPlayer.html");
     }
 }
