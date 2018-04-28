@@ -126,7 +126,6 @@ $(document).ready(function(){
     });
 });
 
-
 // Plays siren if siren option is checked.
 function sirensound(){
     if (playSiren = true) {
