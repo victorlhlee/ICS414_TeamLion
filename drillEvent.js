@@ -78,12 +78,14 @@ function printCheckedViaChoices() {
     for (i = 0; i < items.length; i++) {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
+        }
 
-            if (items[i].value == 'SIREN' && items[i].checked == true) {
-                playSiren = true;
-            } else if (items[i].value == 'RADIO' && items[i].checked == true) {
-                playRadio = true;
-            }
+        if (items[i].value == 'SIREN' && items[i].checked == true) {
+            playSiren = true;
+        } 
+            
+        if (items[i].value == 'RADIO' && items[i].checked == true) {
+            playRadio = true;
         }
     }
 
@@ -104,34 +106,32 @@ function printCheckedViaChoices() {
     location.href = "reviewDrillAlarm.html";
 }
 
-// $(document).ready(function(){
-//     $("#reviewDrillAlarm").click(function(){
-//         location.href = "reviewDrillAlarm.html";
-//     });
-// });
+$(document).ready(function(){
+    $("#reviewDrillAlarm").click(function(){
+        location.href = "reviewDrillAlarm.html";
+    });
+});
 
 $(document).ready(function(){
     $("#confirmDrill").click(function(){
         location.href = "drillAlarmSent.html";
 
-        if (playSiren = true) {
-            window.open("sirenPlayer.html");
-        } else if (playRadio = true) {
-            window.open("drillRadioPlayer.html");
-        }
+        sirensound();
+        radiomsg();
     });
 });
 
-// // Plays siren if siren option is checked.
-// function sirensound(){
-//     if (playSiren = true) {
-//         window.open("sirenPlayer.html");
-//     }
-// }
 
-// // Plays radio message if radio option is checked.
-// function radiomsg(){
-//     if (playRadio = true) {
-//         window.open("drillRadioPlayer.html");
-//     }
-// }
+// Plays siren if siren option is checked.
+function sirensound(){
+    if (playSiren = true) {
+        window.open("sirenPlayer.html");
+    }
+}
+
+// Plays radio message if radio option is checked.
+function radiomsg(){
+    if (playRadio = true) {
+        window.open("drillRadioPlayer.html");
+    }
+}

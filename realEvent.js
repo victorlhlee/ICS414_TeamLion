@@ -1,3 +1,6 @@
+var playSiren = false;
+var playRadio = false;
+
 //click home button to get redirected to start.html
 $(document).ready(function(){
     $("#homeButton").click(function(){
@@ -75,6 +78,14 @@ function printCheckedViaChoices() {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
         }
+
+        if (items[i].value == 'SIREN' && items[i].checked == true) {
+            playSiren = true;
+        } 
+            
+        if (items[i].value == 'RADIO' && items[i].checked == true) {
+            playRadio = true;
+        }
     }
 
     var islanditems = document.getElementsByName('island');
@@ -109,9 +120,26 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#confirm").click(function(){
         location.href = "sendToSupervisor.html";
+
+        sirensound();
+        radiomsg();
     });
 });
 
+
+// Plays siren if siren option is checked.
+function sirensound(){
+    if (playSiren = true) {
+        window.open("sirenPlayer.html");
+    }
+}
+
+// Plays radio message if radio option is checked.
+function radiomsg(){
+    if (playRadio = true) {
+        window.open("realRadioPlayer.html");
+    }
+}
 
 $("input").click(function() {
     var alarm_button = $(this).val();
