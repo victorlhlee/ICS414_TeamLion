@@ -75,6 +75,10 @@ function printCheckedViaChoices() {
     for (i = 0; i < items.length; i++) {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
+
+            if (items[i].checked == true && items[i].value == 'SIREN') {
+                playSiren();
+            }
         }
     }
 
@@ -107,6 +111,6 @@ $(document).ready(function(){
     });
 });
 
-function playRadio(){
-  
+function playSiren(){
+    location.href = "sirenPlayer.html";
 }
