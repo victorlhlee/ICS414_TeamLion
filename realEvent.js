@@ -77,14 +77,14 @@ function printCheckedViaChoices() {
     for (i = 0; i < items.length; i++) {
         if (items[i].type == 'checkbox' && items[i].checked == true) {
             selectedItems += items[i].value + " | ";
-        }
 
-        if (items[i].value == 'SIREN' && items[i].checked == true) {
-            playSiren = true;
-        } 
+            if (items[i].value == 'SIREN' && items[i].checked == true) {
+                playSiren = true;
+            } 
             
-        if (items[i].value == 'RADIO' && items[i].checked == true) {
-            playRadio = true;
+            if (items[i].value == 'RADIO' && items[i].checked == true) {
+                playRadio = true;
+            }
         }
     }
 
